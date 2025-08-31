@@ -1,0 +1,6 @@
+Comando de consola solo (GitBash) para ejecutar multiples veces el robot
+Nota: No usa bucles directamente en el código es una ejecución a la vez.
+
+for i in {1..6}; do   echo "Ejecutando prueba #$i";   ./gradlew clean test --info --tests="RunnerLoginManagement" -Denvironment=qa; done
+
+Así como está el comando ejecutará 6 veces el robot.

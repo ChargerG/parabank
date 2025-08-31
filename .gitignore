@@ -1,0 +1,12 @@
+.idea/
+.vscode
+/.gradle/
+*.bin
+*.lock
+*.probe
+*.idx
+/build/
+/target/
+/out/
+/bin/
+/history/
