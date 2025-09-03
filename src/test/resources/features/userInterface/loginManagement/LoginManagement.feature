@@ -6,7 +6,7 @@ Característica: Registro y autenticación de usuario
   Para garantizar el ingreso a la plataforma de ParaBank
 
   @LoginParaBank
-  Esquema del escenario: : El usuario se registra y luego inicia sesion en ParaBank
+  Esquema del escenario: El usuario se registra y luego inicia sesion en ParaBank
     Dado que <usuario> accede a la pagina de registro de ParaBank
     Cuando completa el formulario con datos validos y envia el registro
     Entonces puede iniciar sesion con sus credenciales y acceder al sistema
