@@ -40,7 +40,7 @@ public class ValidateIfUsername implements Task {
             RegisterForm.enterPassword(password).performAs(actor);
             RegisterForm.enterPasswordAgain(password).performAs(actor);
             RegisterForm.clickOnRegisterButton().performAs(actor);
-            if (ParabankLogoutPage.LOGOUT_BUTTON.waitingForNoMoreThan(Duration.ofSeconds(5)).isVisibleFor(actor))
+            if (ParabankLogoutPage.LOGOUT_BUTTON.waitingForNoMoreThan(Duration.ofSeconds(3)).isVisibleFor(actor))
                 break;
         }
     }

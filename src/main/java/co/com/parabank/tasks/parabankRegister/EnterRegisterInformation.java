@@ -50,7 +50,7 @@ public class EnterRegisterInformation implements Task {
         if (!ParabankLogoutPage.LOGOUT_BUTTON.waitingForNoMoreThan(Duration.ofSeconds(4)).isVisibleFor(actor))
             ValidateIfUsername.exist().performAs(actor);
 
-        Ensure.that("El boton de registro del formulario sigue no desaparecio despues del registro",
+        Ensure.that("El boton de registro del formulario no desaparecio despues del registro",
                         ValidateRegisterButton.thereIsNotVisible())
                 .isFalse().performAs(actor);
         Ensure.that("El mensaje de bienvenida no es el esperado",
